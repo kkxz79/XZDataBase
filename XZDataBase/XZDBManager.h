@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XZDBManager : NSObject
 
 +(instancetype)sharedInstance;
--(void)createSqlite;//创建数据库
--(void)createTable;//创建学生信息表
+-(void)createSqlite;//打开数据库
+-(void)createTable;//打开学生信息表
 -(void)addStudent:(Student*)stu;//添加学生信息
 -(void)deleteStuWithName:(NSString *)name;//根据姓名删除表数据
 -(void)updateWithStudent:(Student *)stu whereName:(NSString *)name;//根据姓名更新表数据

@@ -9,9 +9,10 @@
 #import "ViewController.h"
 #import "XZDBManager.h"
 #import "Student.h"
+#import "FMDBViewController.h"
 
 @interface ViewController ()<UIActionSheetDelegate>
-
+@property(nonatomic,strong)UIButton *sqliteBtn;
 @end
 
 @implementation ViewController
@@ -22,9 +23,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UIBarButtonItem * barButton = [[UIBarButtonItem alloc] initWithTitle:@"action" style:UIBarButtonItemStylePlain target:self action:@selector(rightButtonAction)];
     self.navigationItem.rightBarButtonItem = barButton;
+    
+    self.sqliteBtn.frame = CGRectMake(40.0f, 80.0f, self.view.frame.size.width-80.0f, 40.0f);
+    [self.view addSubview:self.sqliteBtn];
+    
 }
 
--(void)rightButtonAction {
+-(void)sqliteBtnClick {
     [[[UIActionSheet alloc]
       initWithTitle:@"数据库操作"
       delegate:self
@@ -32,6 +37,11 @@
       destructiveButtonTitle:nil
       otherButtonTitles:@"创建数据库",@"建学生表",@"添加学生信息1", @"添加学生信息2",@"添加学生信息3", @"添加学生信息4",@"条件删除",@"更新表数据",@"条件搜索",@"获取所有数据",@"删除数据",@"删除表",@"关闭数据库",@"打开数据库",nil]
      showInView:self.view];
+}
+
+-(void)rightButtonAction {
+    FMDBViewController * fmdbVC = [[FMDBViewController alloc] init];
+    [self.navigationController pushViewController:fmdbVC animated:YES];
 }
 
 #pragma mark - UIActionSheetDelegate
@@ -138,4 +148,14 @@
     [[XZDBManager sharedInstance]openSqlite];
 }
 
+#pragma mark - lazy init
+@synthesize sqliteBtn = _sqliteBtn;
+-(UIButton *)sqliteBtn {
+    if(!_sqliteBtn){
+        _sqliteBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+        [_sqliteBtn setTitle:@"sqlite3" forState:UIControlStateNormal];
+        [_sqliteBtn addTarget:self action:@selector(sqliteBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _sqliteBtn;
+}
 @end

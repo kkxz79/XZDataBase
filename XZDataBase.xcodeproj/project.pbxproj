@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B5B6DF421C8BDBD00884972 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B6DF321C8BDBD00884972 /* FMDBViewController.m */; };
+		9B5B6DF721C8C22800884972 /* XZFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B6DF621C8C22800884972 /* XZFMDBManager.m */; };
+		9B5B6DFA21C8C24600884972 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B6DF921C8C24600884972 /* Person.m */; };
+		9B5B6DFD21C8C25800884972 /* BookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B6DFC21C8C25800884972 /* BookInfo.m */; };
+		9B5B6E0021C8CE7500884972 /* PersonModelDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B6DFF21C8CE7500884972 /* PersonModelDB.m */; };
+		9B5B6E0321C8CE8D00884972 /* BookInfoModelDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B6E0221C8CE8D00884972 /* BookInfoModelDB.m */; };
 		9BC2AF1E21C7709900A13946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2AF1D21C7709900A13946 /* AppDelegate.m */; };
 		9BC2AF2121C7709900A13946 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2AF2021C7709900A13946 /* ViewController.m */; };
 		9BC2AF2421C7709900A13946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC2AF2221C7709900A13946 /* Main.storyboard */; };
@@ -21,6 +27,18 @@
 
 /* Begin PBXFileReference section */
 		93DBA8C3A869A4966585A2F8 /* Pods-XZDataBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZDataBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XZDataBase/Pods-XZDataBase.debug.xcconfig"; sourceTree = "<group>"; };
+		9B5B6DF221C8BDBD00884972 /* FMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		9B5B6DF321C8BDBD00884972 /* FMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		9B5B6DF521C8C22800884972 /* XZFMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZFMDBManager.h; sourceTree = "<group>"; };
+		9B5B6DF621C8C22800884972 /* XZFMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZFMDBManager.m; sourceTree = "<group>"; };
+		9B5B6DF821C8C24600884972 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9B5B6DF921C8C24600884972 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9B5B6DFB21C8C25800884972 /* BookInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookInfo.h; sourceTree = "<group>"; };
+		9B5B6DFC21C8C25800884972 /* BookInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookInfo.m; sourceTree = "<group>"; };
+		9B5B6DFE21C8CE7500884972 /* PersonModelDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModelDB.h; sourceTree = "<group>"; };
+		9B5B6DFF21C8CE7500884972 /* PersonModelDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModelDB.m; sourceTree = "<group>"; };
+		9B5B6E0121C8CE8D00884972 /* BookInfoModelDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookInfoModelDB.h; sourceTree = "<group>"; };
+		9B5B6E0221C8CE8D00884972 /* BookInfoModelDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookInfoModelDB.m; sourceTree = "<group>"; };
 		9BC2AF1921C7709900A13946 /* XZDataBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZDataBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC2AF1C21C7709900A13946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BC2AF1D21C7709900A13946 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,10 +105,22 @@
 				9BC2AF1D21C7709900A13946 /* AppDelegate.m */,
 				9BC2AF1F21C7709900A13946 /* ViewController.h */,
 				9BC2AF2021C7709900A13946 /* ViewController.m */,
+				9B5B6DF221C8BDBD00884972 /* FMDBViewController.h */,
+				9B5B6DF321C8BDBD00884972 /* FMDBViewController.m */,
 				9BC2AF3421C7787A00A13946 /* XZDBManager.h */,
 				9BC2AF3521C7787A00A13946 /* XZDBManager.m */,
+				9B5B6DF521C8C22800884972 /* XZFMDBManager.h */,
+				9B5B6DF621C8C22800884972 /* XZFMDBManager.m */,
+				9B5B6DF821C8C24600884972 /* Person.h */,
+				9B5B6DF921C8C24600884972 /* Person.m */,
+				9B5B6DFB21C8C25800884972 /* BookInfo.h */,
+				9B5B6DFC21C8C25800884972 /* BookInfo.m */,
 				9BC2AF3721C7815900A13946 /* Student.h */,
 				9BC2AF3821C7815900A13946 /* Student.m */,
+				9B5B6DFE21C8CE7500884972 /* PersonModelDB.h */,
+				9B5B6DFF21C8CE7500884972 /* PersonModelDB.m */,
+				9B5B6E0121C8CE8D00884972 /* BookInfoModelDB.h */,
+				9B5B6E0221C8CE8D00884972 /* BookInfoModelDB.m */,
 				9BC2AF2221C7709900A13946 /* Main.storyboard */,
 				9BC2AF2521C7709B00A13946 /* Assets.xcassets */,
 				9BC2AF2721C7709B00A13946 /* LaunchScreen.storyboard */,
@@ -205,9 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5B6E0021C8CE7500884972 /* PersonModelDB.m in Sources */,
 				9BC2AF2121C7709900A13946 /* ViewController.m in Sources */,
+				9B5B6E0321C8CE8D00884972 /* BookInfoModelDB.m in Sources */,
+				9B5B6DFD21C8C25800884972 /* BookInfo.m in Sources */,
 				9BC2AF2C21C7709C00A13946 /* main.m in Sources */,
+				9B5B6DFA21C8C24600884972 /* Person.m in Sources */,
 				9BC2AF3921C7815900A13946 /* Student.m in Sources */,
+				9B5B6DF421C8BDBD00884972 /* FMDBViewController.m in Sources */,
+				9B5B6DF721C8C22800884972 /* XZFMDBManager.m in Sources */,
 				9BC2AF1E21C7709900A13946 /* AppDelegate.m in Sources */,
 				9BC2AF3621C7787A00A13946 /* XZDBManager.m in Sources */,
 			);

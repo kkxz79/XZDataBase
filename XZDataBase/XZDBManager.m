@@ -46,9 +46,9 @@
     //打开数据库
     int result = sqlite3_open(path.UTF8String, &_db);
     if(result == SQLITE_OK) {
-        NSLog(@"数据库创建成功");
+        NSLog(@"数据库打开成功");
     }else {
-        NSLog(@"数据库创建失败");
+        NSLog(@"数据库打开失败");
     }
 }
 
