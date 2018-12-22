@@ -37,7 +37,7 @@
  */
 -(void)createFMDB {
     //存放数据路径
-    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
     NSString * fPath = [path stringByAppendingPathComponent:@"fmdb.sqlite"];
     self.filePath = fPath;
     

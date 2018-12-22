@@ -38,7 +38,7 @@
 
 -(void)createSqlite {
     //创建数据文件路径
-    NSString * string = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString * string = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
     NSString *path = [string stringByAppendingPathComponent:@"Student.sqlite"];
     NSLog(@"student sqlite path %@",path);
     self.filePath = path;
